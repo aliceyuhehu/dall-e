@@ -1,0 +1,16 @@
+<!-- templates/show_image.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Generated Image</title>
+</head>
+<body>
+    <h1>Generated Image</h1>
+    {% if image_url %}
+        <img src="{{ image_url }}" alt="Generated Image" style="max-width: 100%;">
+    {% else %}
+        <p>No image to display.</p>
+    {% endif %}
+</body>
+</html>
